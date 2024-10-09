@@ -1,0 +1,72 @@
+@import url("assets/css/bootsrap.min.css");
+@import url("scriptTest.css");
+.panel-grid-cell .so-panel:after{
+    display:none !important;
+}
+body.page .homeBanner-middle-line{
+    position:relative;
+    display:block;
+    margin: 0px auto 0;
+    font-family: sans-serif;
+    width:1px;
+    height:80px;
+}
+.animate .textwidget p{
+    margin: 10px 0;
+}
+body.page .active .homeBanner-middle-line:before{
+    height:100%;
+}
+body.page .homeBanner-middle-line:before{
+    content:"";
+    display:block;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:0;
+    background-color: #fff;
+    transition: height 1.4s ease 0.8s;
+}
+body.page .homeBanner-middle-line.second{
+    height: calc(83%-197px);
+}
+
+.animate{
+    position:relative;
+}
+.animate:before{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content:"";
+    background: rgba(0,0,0,0.4);
+}
+.animate .textwidget{
+    position:relative;
+    font-family: sans-serif;
+    padding: 10% 0 0 0;
+    height:100%;
+}
+.about-animate .homeDown-arrow img{
+    width:22px;
+}
+
+.property-toggle{
+    color: #fff;
+    text-decoration: underline;
+    cursor: pointer;
+}
+#property-details{
+    z-index: 999;
+    display:none;
+}
+.single-dev-availability-details-stats table{
+    width:100%;
+}
+.single-dev-availability-wrap{
+    position:relative;
+    padding:40px 0 80px 0;
+}
